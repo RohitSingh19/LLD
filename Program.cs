@@ -1,11 +1,24 @@
 ﻿
+using LLD.DesignPatterns.Builder;
 using LLD.OOP;
 
 public class Program
 {
     public static void Main(string[] args)
-    { 
-        EncapsulationExample eg = new EncapsulationExample();
-        eg.Run();
+    {
+        //EncapsulationExample eg = new EncapsulationExample();
+        //eg.Run();
+
+        //InheritanceExample example = new InheritanceExample();
+        //example.Run();
+        //inhertiance inhertiance = new inhertiance();
+        //inhertiance.Function();
+
+        //AssociationExample example = new AssociationExample();
+        //example.RunAssociationExample();
+
+
+        DocumentEngine documentEngine = new DocumentEngine();
+        documentEngine.RunDocumentEngine();
     }
 }
