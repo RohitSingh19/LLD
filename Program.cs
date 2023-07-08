@@ -1,5 +1,6 @@
 ﻿
 using LLD.DesignPatterns.Builder;
+using LLD.DesignPatterns.Template;
 using LLD.OOP;
 
 public class Program
@@ -18,7 +19,10 @@ public class Program
         //example.RunAssociationExample();
 
 
-        DocumentEngine documentEngine = new DocumentEngine();
-        documentEngine.RunDocumentEngine();
+        //DocumentEngine documentEngine = new DocumentEngine();
+        //documentEngine.RunDocumentEngine();
+
+        DocumentGeneratorClient documentGeneratorClient = new DocumentGeneratorClient();
+        documentGeneratorClient.RunDocumentEngine();
     }
 }
