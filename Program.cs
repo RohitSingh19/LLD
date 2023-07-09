@@ -1,5 +1,6 @@
 ﻿
 using LLD.DesignPatterns.Builder;
+using LLD.DesignPatterns.Prototype;
 using LLD.DesignPatterns.Template;
 using LLD.OOP;
 
@@ -22,7 +23,11 @@ public class Program
         //DocumentEngine documentEngine = new DocumentEngine();
         //documentEngine.RunDocumentEngine();
 
-        DocumentGeneratorClient documentGeneratorClient = new DocumentGeneratorClient();
-        documentGeneratorClient.RunDocumentEngine();
+        //DocumentGeneratorClient documentGeneratorClient = new DocumentGeneratorClient();
+        //documentGeneratorClient.RunDocumentEngine();
+
+        PrototypeRunner runner = new PrototypeRunner();
+        runner.protoTypeRunnerMethod();
+
     }
 }

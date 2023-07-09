@@ -15,9 +15,9 @@ namespace LLD.DesignPatterns.Builder
         public void printDocument()
         {
             Console.WriteLine($"This is a document [START]");
-            Console.WriteLine($"HEADER  => ${header}");
-            Console.WriteLine($"CONTENT => ${content}");
-            Console.WriteLine($"FOOTER => ${footer}");
+            Console.WriteLine($"HEADER  => {header}");
+            Console.WriteLine($"CONTENT => {content}");
+            Console.WriteLine($"FOOTER => {footer}");
             Console.WriteLine($"This is a document [END]");
             Console.WriteLine();
         }
