@@ -3,6 +3,7 @@ using LLD.DesignPatterns.AbstractFactory;
 using LLD.DesignPatterns.Builder;
 using LLD.DesignPatterns.Factory;
 using LLD.DesignPatterns.Prototype;
+using LLD.DesignPatterns.State;
 using LLD.DesignPatterns.Template;
 using LLD.OOP;
 
@@ -34,8 +35,10 @@ public class Program
         //FactoryRunner factoryRunner = new FactoryRunner();
         //factoryRunner.FactoryRunnerMethod();
 
-        UIController controller = new UIController();
-        controller.RunUIController();
+        //UIController controller = new UIController();
+        //controller.RunUIController();
+
+        StateRunner runner = new StateRunner();
 
     }
 }
