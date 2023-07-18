@@ -1,4 +1,5 @@
 ﻿
+using LLD.DesignPatterns.AbstractFactory;
 using LLD.DesignPatterns.Builder;
 using LLD.DesignPatterns.Factory;
 using LLD.DesignPatterns.Prototype;
@@ -30,8 +31,11 @@ public class Program
         //PrototypeRunner runner = new PrototypeRunner();
         //runner.protoTypeRunnerMethod();
 
-        FactoryRunner factoryRunner = new FactoryRunner();
-        factoryRunner.FactoryRunnerMethod();
+        //FactoryRunner factoryRunner = new FactoryRunner();
+        //factoryRunner.FactoryRunnerMethod();
+
+        UIController controller = new UIController();
+        controller.RunUIController();
 
     }
 }
