@@ -1,6 +1,7 @@
 ﻿
 using LLD.DesignPatterns.AbstractFactory;
 using LLD.DesignPatterns.Builder;
+using LLD.DesignPatterns.Decorator;
 using LLD.DesignPatterns.Facade;
 using LLD.DesignPatterns.Factory;
 using LLD.DesignPatterns.Prototype;
@@ -44,6 +45,8 @@ public class Program
 
         //FacadeRunner facadeRunner = new FacadeRunner(); 
 
-        SingletonRunner singletonRunner = new SingletonRunner();
+        //SingletonRunner singletonRunner = new SingletonRunner();
+
+        DecoratorRunner decoratorRunner = new DecoratorRunner();    
     }
 }
