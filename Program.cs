@@ -1,5 +1,6 @@
 ﻿
 using LLD.DesignPatterns.AbstractFactory;
+using LLD.DesignPatterns.Adapter;
 using LLD.DesignPatterns.Builder;
 using LLD.DesignPatterns.Decorator;
 using LLD.DesignPatterns.Facade;
@@ -47,6 +48,75 @@ public class Program
 
         //SingletonRunner singletonRunner = new SingletonRunner();
 
-        DecoratorRunner decoratorRunner = new DecoratorRunner();    
+        //DecoratorRunner decoratorRunner = new DecoratorRunner();    
+
+
+        //Third third = new Third();
+        //third.Runner();
+
+        //AdapterRunner adapterRunner = new AdapterRunner();
+
+        //StaticExample staticExample = new StaticExample();
+        pub pub = new pub();
+        
+        
+    }
+}
+
+
+public class Test
+{
+    Thread t = new Thread(testFunction)
+    {
+        Name = "Test",
+    };
+    static void testFunction()
+    {
+        Console.WriteLine("Hi I'm a test function");
+    }
+}
+
+public class pub
+{
+    dynamic a;
+    private string name;
+    public string n;
+   public pub(int a) 
+   {
+   
+   }
+
+   public string Name 
+   { 
+        get
+        {
+             return name;
+        }
+        set
+        { 
+            name = value;
+        }
+   }
+   public pub() 
+   {
+        AddDelegate add = new AddDelegate(Add);
+        int a = add(10, 20);
+   }
+
+    public delegate int AddDelegate(int a, int b);
+    public int Add(int a, int b)
+    {
+        return a + b;
+    }
+   
+}
+public class sub : pub
+{
+
+    public void aa()
+    {
+        sub s = new sub();
+        sub sb = s;
+        
     }
 }

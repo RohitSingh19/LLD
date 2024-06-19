@@ -44,4 +44,83 @@ namespace LLD.OOP
             Console.ReadLine();
         }
     }
+
+
+
+    public class First
+    { 
+        public void Run()
+        {
+            Console.WriteLine("I am a Run function running for First");
+        }
+    }
+
+    interface ISecond
+    {
+        public void Run();
+    }
+
+    public class Third : First, ISecond
+    {
+        //public void Run()
+        //{
+        //    Console.WriteLine("I am a Run function running for Third");
+        //}
+
+        
+
+        public void Runner()
+        { 
+            Third example = new Third();
+            example.Run(); //This will call Run method of first class (wrong)
+            Run(); //this will call run method from third class
+
+            First first = new First();
+            first.Run(); //this will call run method for first class
+
+            First first1 = new Third();
+            first1.Run();//this will call run method for first class
+
+        }
+        
+    }
+
+
+    public class BaseClass
+    { 
+        public void functionA() { 
+            
+        }
+        private void functionB() { }    
+    }
+
+    public class DerivedClass : BaseClass
+    {
+        //public B()
+        //{
+        //    B b = new OOP.B();
+        //    b.functionA();
+        //    b.functionB();
+        //}
+
+        public void test()
+        { 
+            DerivedClass example = new DerivedClass();
+            example.functionA();
+            //example.functionB();
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

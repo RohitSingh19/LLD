@@ -22,6 +22,8 @@ namespace LLD.OOP
         }
     }
 
+
+    /*When house object dies, so does the Room object, strong dependency.*/
     public class Room
     {
         private string name;

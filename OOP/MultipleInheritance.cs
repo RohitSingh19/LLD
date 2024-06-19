@@ -26,6 +26,7 @@ namespace LLD.OOP
         {
             inhertiance c = new inhertiance();
             c.Method();
+            Method();
             
         }
 
