@@ -11,7 +11,7 @@ namespace LLD.DesignPatterns.Decorator
         public ICoffee coffeeDecorator;
         public CoffeeDecorator(ICoffee coffee)
         {
-              coffeeDecorator = coffee;
+              this.coffeeDecorator = coffee;
         }
         public virtual double GetCost()
         {

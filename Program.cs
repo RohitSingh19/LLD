@@ -48,7 +48,7 @@ public class Program
 
         //SingletonRunner singletonRunner = new SingletonRunner();
 
-        //DecoratorRunner decoratorRunner = new DecoratorRunner();    
+        DecoratorRunner decoratorRunner = new DecoratorRunner();
 
 
         //Third third = new Third();
@@ -57,9 +57,10 @@ public class Program
         //AdapterRunner adapterRunner = new AdapterRunner();
 
         //StaticExample staticExample = new StaticExample();
-        pub pub = new pub();
-        
-        
+        //pub pub = new pub();
+
+
+
     }
 }
 

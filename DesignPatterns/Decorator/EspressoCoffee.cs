@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LLD.DesignPatterns.Decorator
 {
-    public class Espresso : ICoffee
+    public class EspressoCoffee : ICoffee
     {
         public double GetCost()
         {

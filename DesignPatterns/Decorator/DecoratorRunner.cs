@@ -10,22 +10,21 @@ namespace LLD.DesignPatterns.Decorator
     {
         public DecoratorRunner()
         {
-            Espresso espresso = new Espresso();
+            
+            ICoffee coffee = new DecafCoffee();
+            Console.WriteLine("Cost: " + coffee.GetCost() + " Description: " + coffee.GetDescription());    
 
-            Console.WriteLine("Espresso Coffee 1");
-            Console.WriteLine($"{espresso.GetCost()} of {espresso.GetDescription()}");
-            Console.WriteLine("------------------------------------------------------");
+            ICoffee coffee1 = new EspressoCoffee();
+            Console.WriteLine("Cost: " + coffee1.GetCost() + " Description: " + coffee1.GetDescription());
 
-            CoffeeDecorator espressoWithMilk = new Milk(espresso);
-            Console.WriteLine("Espresso Coffee 2");
-            Console.WriteLine($"{espressoWithMilk.GetCost()} of {espressoWithMilk.GetDescription()}");
-            Console.WriteLine("------------------------------------------------------");
+            coffee = new Sugar(coffee);
+            Console.WriteLine("Cost: " + coffee.GetCost() + " Description: " + coffee.GetDescription());
 
+            coffee1 = new Milk(coffee1);
+            Console.WriteLine("Cost: " + coffee1.GetCost() + " Description: " + coffee1.GetDescription());
 
-            CoffeeDecorator espressoWithMilkAndSugar = new Sugar(espressoWithMilk);
-            Console.WriteLine("Espresso Coffee 3");
-            Console.WriteLine($"{espressoWithMilkAndSugar.GetCost().ToString("0.00")} of {espressoWithMilkAndSugar.GetDescription()}");
-            Console.WriteLine("------------------------------------------------------");
+            ICoffee coffee2 = new Sugar(new Milk( new EspressoCoffee())); 
+            Console.WriteLine("Cost: " + coffee2.GetCost() + " Description: " + coffee2.GetDescription());
         }
     }
 }

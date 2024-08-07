@@ -9,7 +9,9 @@ namespace LLD.DesignPatterns.Decorator
     public class Milk : CoffeeDecorator
     {
         public Milk(ICoffee coffee):base(coffee) 
-        { }
+        {
+        
+        }
 
         public override double GetCost()
         {
