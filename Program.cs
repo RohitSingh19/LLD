@@ -2,6 +2,7 @@
 using LLD.DesignPatterns.AbstractFactory;
 using LLD.DesignPatterns.Adapter;
 using LLD.DesignPatterns.Builder;
+using LLD.DesignPatterns.Composite;
 using LLD.DesignPatterns.Decorator;
 using LLD.DesignPatterns.Facade;
 using LLD.DesignPatterns.Factory;
@@ -48,7 +49,9 @@ public class Program
 
         //SingletonRunner singletonRunner = new SingletonRunner();
 
-        DecoratorRunner decoratorRunner = new DecoratorRunner();
+        //DecoratorRunner decoratorRunner = new DecoratorRunner();
+
+        CompositeRunner compositeRunner = new CompositeRunner();    
 
 
         //Third third = new Third();
