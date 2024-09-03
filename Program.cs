@@ -9,6 +9,7 @@ using LLD.DesignPatterns.Factory;
 using LLD.DesignPatterns.Prototype;
 using LLD.DesignPatterns.Singleton;
 using LLD.DesignPatterns.State;
+using LLD.DesignPatterns.Strategy;
 using LLD.DesignPatterns.Template;
 using LLD.OOP;
 
@@ -51,7 +52,7 @@ public class Program
 
         //DecoratorRunner decoratorRunner = new DecoratorRunner();
 
-        CompositeRunner compositeRunner = new CompositeRunner();    
+        //CompositeRunner compositeRunner = new CompositeRunner();    
 
 
         //Third third = new Third();
@@ -62,10 +63,13 @@ public class Program
         //StaticExample staticExample = new StaticExample();
         //pub pub = new pub();
 
-
+        //StrategyClient client1 = new StrategyClient("UPI", 250);
+        //StrategyClient client2 = new StrategyClient("NEFT", 250);
+        //StrategyClient client3 = new StrategyClient("N", 250);
 
     }
 }
+
 
 
 public class Test
