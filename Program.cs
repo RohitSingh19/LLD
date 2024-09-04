@@ -6,6 +6,7 @@ using LLD.DesignPatterns.Composite;
 using LLD.DesignPatterns.Decorator;
 using LLD.DesignPatterns.Facade;
 using LLD.DesignPatterns.Factory;
+using LLD.DesignPatterns.Observer;
 using LLD.DesignPatterns.Prototype;
 using LLD.DesignPatterns.Singleton;
 using LLD.DesignPatterns.State;
@@ -66,6 +67,7 @@ public class Program
         //StrategyClient client1 = new StrategyClient("UPI", 250);
         //StrategyClient client2 = new StrategyClient("NEFT", 250);
         //StrategyClient client3 = new StrategyClient("N", 250);
+        RunObserver runObserver = new RunObserver();
 
     }
 }
